@@ -3,7 +3,12 @@ import CardList from "./CardList";
 import { robots } from "./robots";
 
 const App = () => {
-  return <CardList robots={robots} />;
+  return (
+    <div>
+      <h1>Robot Friends</h1>
+      <CardList robots={robots} />
+    </div>
+  );
 };
 
 export default App;
