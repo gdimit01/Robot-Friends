@@ -1,3 +1,7 @@
+# My first React App
+
+So basically this project is a basic React app. It fetches a Json file of users from robots. It lists them in the page. I also made a search robots box which allows you to filter out which user robot you want to search for dynamically. Also added a scroll bar on the side. This way, it won't hide the title and won't hide the search robots search box.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
