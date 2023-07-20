@@ -3,6 +3,9 @@ import Card from "./Card";
 
 const CardList = ({ robots }) => {
   //destructing it from robots
+  // if (true) {
+  //  throw new Error("Something went wrong");
+  //}
 
   return (
     <div>
