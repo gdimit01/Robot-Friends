@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 import "./App.css";
 
 //Smart components are class components
@@ -35,11 +36,13 @@ class App extends Component {
         <div className="tc">
           <h1 className="f1">Robot Friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
-          <CardList robots={filteredRobots} />
+          <Scroll>
+            <CardList robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }
   }
 }
-
+//the CardList is part of 'children' of Scroll
 export default App;
