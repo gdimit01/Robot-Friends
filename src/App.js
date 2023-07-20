@@ -19,9 +19,15 @@ class App extends Component {
    *
    * @param {Event} event - The change event.
    */
-  onSearchChange(event) {
+  onSearchChange = (event) => {
     console.log(event.target.value);
-  }
+    const filterRobots = this.state.robots.filter((robot) => {
+      return robots.name
+        .toLowerCase()
+        .includes(this.state.searchfield.toLowerCase());
+    });
+    console.log(filterRobots);
+  };
 
   /**
    * Renders the Robot Friends component.
